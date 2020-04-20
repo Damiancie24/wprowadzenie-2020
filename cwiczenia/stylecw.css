@@ -1,0 +1,64 @@
+body
+{
+    background: #777 ;
+
+}
+main
+{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    max-width: 1500px;
+    min-width: auto;
+    margin: 0 auto;
+
+    min-height: 500px;
+    background: rgb(80, 168, 168) ;
+    border: 5px;
+
+}
+header
+{
+    padding: 20px;
+}
+section
+{
+    display: flex;
+    background: rgb(53, 143, 105);
+}
+article
+{
+    color: #eee;
+    background: #555;
+    padding: 20px;
+}
+#pazury
+{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #eee;
+    padding: 5px;
+
+}
+#Csharp
+{
+    display: flex;
+    padding: 5px;
+    border: 2px solid #eee;
+    justify-content: space-around;
+}
+iframe
+{
+    width: 300px;
+    padding: 5px;
+}
+aside
+{
+    max-width: 300px;
+    padding: 20px;
+
+}
+footer
+{
+    padding: 20px;
+}   
