@@ -30,20 +30,20 @@ nav a
 section
 {
     display: flex;
+    min-height: 500px;
     /* kierunek ukladania paneli */
     /* flex-direction: ; */
     /* flex-wrap: wrap; */
 }
 aside
 {
-    
     min-height: 500px;
     width: 150px;
     background: lightcoral;
 }
 article
 {
-    min-height: 500px;
+    
     width: 700px;
     background: lightgreen;
 }

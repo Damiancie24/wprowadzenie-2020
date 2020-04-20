@@ -1,0 +1,18 @@
+/* KAŻDY SELECTOR MOŻNA ŁĄCZYĆ */
+
+/* selector znacznika - każdy div */
+
+/* class  */
+.f20
+{
+    font-size: 24px;
+}
+.p40
+{
+    padding: 40px;
+}
+
+a:hover
+{
+    background: lightcoral;
+}
