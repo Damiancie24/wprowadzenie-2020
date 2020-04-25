@@ -48,3 +48,29 @@ footer {
     height: 150px;
     background: lightseagreen;
 }
+@media(max-width: 1000px)
+{
+    main{
+        width: 850px;
+    }
+    
+        
+    #right-panel {
+        /* opacity: 0; */
+        /* visibility: hidden; */
+        display: none;
+    }
+}
+@media(max-width: 768px)
+{
+    main{
+        width: 100%;
+    }
+    
+        
+    #right-panel {
+        /* opacity: 0; */
+        /* visibility: hidden; */
+        display: none;
+    }
+}

@@ -1,36 +1,35 @@
-span
-{
-    color: rgba(red, green, blue, alpha);
+span {
+    color: red;
 }
-div
-{
-    background: gray;
+div {
+    background: grey;
 }
-#po
-{
-    color: green;
+#block-model {
+    width: 200px;
+    height: 200px;
+    background: #7fade9;
+    /* margines wewnętrzny */
+    /* padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px; */
+
+    /* paddingi dookoła */
+    padding: 20px;
+
+    /* 15px - góra/dół, 30px - lewo/prawo */
+    /* padding: 15px 30px; */
+
+    /* kolejność: góra prawo dół lewo */
+    /* padding: 20px 30px 10px 50px; */
+
+    /* kolejność: szerokość styl kolor */
+    /* style: solid dotted dashed*/
+    border: 1px solid black;
+    border-bottom: 5px solid rgba(237, 248, 174, 0.52);
+    /* border-bottom-width: 10px; */
+
+    /* kolejność: jak w paddingach */
+    margin: 30px 10px 50px 50px;
+    margin-left: 5px;
 }
-#block-model
-{
-width: 200px;
-height: 200px;
-background: #85ffeb;
-/* margines wewnetrzny */
-padding: 20px;
-
-/* padding 15px gra do 30px lewo prawo */
-/* padding: 15px 30px; */
-
-/* padding gora prawo dlewo */
-/* padding: 20px 30px 10px 50px; */
-
-
-/* obramowanie brubosc styl kolor */
-border: 10px solid rgba(210, 210, 91, 0.2
-
-/* margines zewnętrzny */
-margin: 30px 10px;
-margin-left: 5px;
-}
-
-

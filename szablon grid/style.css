@@ -1,12 +1,20 @@
 body {
     background: #aaa;
+    display: flex;
+    justify-content: center;
 }
 main {
-    width: 1000px;
-    margin: 0 auto;
+    
+    display: grid;
+    grid-template-columns: 150px 700 px150px;
+    grid-template-rows: 150px 500px 150px;
+    grid-template-areas: 
+        "header header header"
+        "aside  article rpanel"
+        "footer footer footer";
 }
 header {
-    height: 150px;
+    grid-area: header;
     background: lightblue;
 }
 nav {
@@ -23,28 +31,21 @@ nav a {
 #a4 {
     flex-shrink: 1;
 }
-section {
-    display: flex;
-    /* align-items: stretch; */
-    /* height: 500px; */
-    min-height: 500px;
-    /* kierunek układania elementów */
-    /* flex-direction: column; */
-}
+
 aside {
-    width: 150px;
     background: lightcoral;
+    grid-area: aside;
 }
 article {
-    width: 700px;
+    grid-area: article;
     background: lightcyan;
     /* overflow: auto; */
 }
 #right-panel {
-    width: 150px;
+    grid-area: rpanel;
     background:lightpink;
 }
 footer {
-    height: 150px;
+    grid-area: footer;
     background: lightseagreen;
 }
