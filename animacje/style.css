@@ -1,0 +1,106 @@
+body{
+    background: linear-gradient(to right, #3fada8, #808080); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+a.anim{
+    transition: all 1s linear;
+    font-size: 30px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.anim:hover{
+    transition: all 0.15s linear;
+    background: #ffffff;
+    color: #000000;
+}
+
+.box{
+    margin: 10px;
+    width: 300px;
+    height: 10px;
+    border: 10px solid #ffffff;
+    background: #3fada8;
+    position: relative;
+    left: 0;
+    /* transition: all 1s ease-in-out; */
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.box.b1:hover{
+    background: red;
+}
+.box.b2:hover{
+    left: 150px;
+
+}
+.box.b3 div{
+    background: red;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    transition: all 1s ease-in-out;
+}
+
+.box.b3:hover div{
+    width: 100%;
+   
+}
+.box.b4::after{
+    content: "";
+    display: block;
+    width: 0;
+    background:  red;
+    position: absolute;
+    height: 100%;
+    transition: all 1s ease-in-out;
+    right: 0;
+}
+.box.b4:hover::after {
+    width: 100%;
+   
+}
+
+.box.b5::before{
+    content: "";
+    display: block;
+    width: 0;
+    left: 0;
+    background:  red;
+    position: absolute;
+    height: 100%;
+    transition: all 1s ease-in-out;
+    
+}
+
+.box.b5:hover::before{
+    animation-name: bar;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    /* animation-direction: alternate; */
+}
+@keyframes bar {
+    0%{
+        left: 0;
+        width: 0;
+    }
+    25%{
+        left: 25%;
+        width: 30%;
+    }
+    50%{
+        left: 50;
+        width: 15;
+    }
+    75%{
+        left: 75%;
+        width: 5%;
+    }
+    100%{
+        left: 100%;
+        width: 0;
+    }
+}
+

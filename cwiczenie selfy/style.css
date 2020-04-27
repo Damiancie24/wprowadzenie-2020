@@ -77,6 +77,11 @@ h2{
     color: #e2e2e2;
     font-weight: 400;
 }
+h4{
+  color: #2d3438; 
+  font-size: 36px; 
+  /* font-family: Roboto conden;    trzeba poprawic*/
+}
 #spaceballs{
     font-size: 24px;
     font-weight: 900;
@@ -105,7 +110,7 @@ margin: 15px 0 18px;
 font-size: 36px;
 }
 
-.info h3::after {
+.info h3::after h4::after {
     content: "";
     display: inline-block;
     width: 8px;
@@ -138,9 +143,9 @@ footer{
     align-items: flex-end;
 } 
 #copy{
-    display: flex;-
+    display: flex;
     align-items: center;
-    color
+    /* color  */
 } 
 #copy img{
     height: 19px;
@@ -156,5 +161,37 @@ footer{
 img#about{
     width: 100%;
     margin-top: 65px;
-    border: 6+px solid #fff;
+    border: 6px solid #fff;
+}
+#galery-one{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "text img1 img2"
+    "text img3 img4"
+    "text img5 img6";
+}
+section img{
+    transition: all 0.3 ease-in-out;
+}
+section img:hover{
+opacity: 0.7;
+}
+
+#galery-one img{
+    width: 350px;
+    border: 6px solid #fff;
+    margin: 16px20px 16px;
+
+}
+#galery-one img:nth-child(odd){
+margin-left: 0;
+}
+#galery-one .text{
+grid-area: text;
+}
+
+#galery-one .aleo{
+
 }
