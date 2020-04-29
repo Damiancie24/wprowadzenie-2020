@@ -1,7 +1,7 @@
-body{
-    background: lightgray !important;
+body {
+    background: lightgrey;
 }
-div{
-    background: #ffffff;
-    border: 1px solid #cccccc;
+div {
+    background: #fff;
+    border: 1px solid #ccc;
 }

@@ -5,40 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularze</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 </head>
 <body>
-    <!-- get i post  dla wysylania plikow "enctype="multipart/form-data""-->
-    <form action="" method="POST" enctype="multipart/form-data">
-        <label for="imie">Imię:</label>
-        <input type="text" name="imie" id="imie" >
-        <label for="imie">Nazwisko:</label>
-        <input type="text" name="Nazwisko" id="imie" >
-        <label for="adres">Adres:</label>
+    <i class="fas fa-tasks"></i>
+    <i class="fas fa-cloud-rain"></i>
+    <i class="fas fa-cloud-moon-rain"></i>
+    <!-- enctype tylko dla plików -->
+    <!-- enctype="multipart/form-data" -->
+    <form action="" method="get">
+        <!-- jednolinijkowe pole tekstowe -->
+        <label for="imie">Imię</label>
+        <input type="text" name="imie" id="imie">
+        <label for="imie">Nazwisko</label>
+        <input type="text" name="nazwisko" id="nazwisko">
+        <label for="adres">Adres</label>
         <textarea name="adres" id="adres" cols="30" rows="10"></textarea>
         <label for="dostawa">Dostawa</label>
-        <select name="dostawa" id="dostawa">
-            <option value="kurier">kurier</option>
-            <option value="paczkomat">paczkomat</option>
-            <option value="osobisty">odbiur osobisty</option>
+        <select name="dostawa" id="dostawa" size="3" multiple>
+            <option value="kurier">Kurier</option>
+            <option value="paczkomat">Paczkomat</option>
+            <option value="osobisty">Odbiór osobisty</option>
         </select>
-
         <div class="fr">
             <label for="regulamin">Zaakceptuj regulamin</label>
             <input type="checkbox" name="regulamin" id="regulamin">
         </div>
-
-        <label for="email">email</label>
-        <input type="email" name="email" id="imali">
+        <label for="email">Login</label>
+        <input type="email" name="email" id="email" required>
         <label for="pass">Hasło</label>
         <input type="password" name="pass" id="pass" required>
-        
+        <p>Płeć</p>
+        <div class="fr">
+            <label for="kobieta">Kobieta</label>
+            <input type="radio" name="plec" id="kobieta">
+        </div>
+        <div class="fr">
+            <label for="mezczyzna">Mężczyzna</label>
+            <input type="radio" name="plec" id="mezczyzna">
+        </div>
+        <label for="zdjecie">Zdjęcie</label>
+        <input type="file" name="zdjecie" id="zdjecie">
+        <input type="hidden" name="medium" value="homepage">
 
-        <input type="file" name="" id="">
-
-        <br>
-        <input type="submit" value="Submit">
 
 
+        <input type="submit" value="Zamów">
+        <input type="reset" value="Wyczyść">
     </form>
 </body>
 </html>
