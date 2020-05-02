@@ -22,35 +22,54 @@ main{
     width: 100%;
     background: #252A3A;
     grid-area: nav;
-    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* z-index: 10; */
 }
 
-
+.buttonmenu{
+    border: 0;
+    background: #252A3A ;
+    color: #1B98F8;
+    display: flex;
+    justify-self: flex-start;
+    z-index: 100;
+    padding: 3px;
+}
+.buttonmenu:focus ~ nav{
+    transform: translateY(0);
+}
 nav{
-    
+    background: #252A3A;
+    z-index: 30;
     display: flex;
     flex-direction: column;
     width: 100%;
     color: #ffffff;
    grid-area: nav; 
+   transform: translateY(-105%);
+   transition: 0.5s transform ease-in-out;
 }
 
-nav #linkmenu{
+/* nav #linkmenu{
     color: #1B98F8;
     align-self: flex-end;
     padding-right: 8px;
-}
+} */
 /* #linkmenu:hover  {
   
     z-index: 150;
 } */
-/* #emaillist  {
-    position: absolute;
+#emaillist  {
+    position: relative;
     left: 0;
     top: 30px;
     z-index: 20;
     background-color: #ffffff;
-} */
+}
 
 nav #compose{
     display: inline-block;
@@ -163,6 +182,7 @@ a{
     padding: 15px;
     width: auto;
     grid-area: content;
+    z-index: 40;
 }
 header{
     background: #ffffff;
