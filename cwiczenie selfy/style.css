@@ -209,3 +209,31 @@ section img:hover {
     font-size: 24px;
     line-height: 32px;
 }
+
+
+.bigger{
+    /* transform: scale(1.5); */
+    font-size: 40px;
+}
+
+.animate{
+    transition: all 2s ease-in-out;
+    transform: translateX(-100px);
+}
+
+#lightbox {
+display: flex;
+justify-content: center;
+align-items: center;
+position: fixed;
+z-index: 1000;
+width: 100%;
+height: 100%;
+/* display: none; */
+}
+#lightbox {
+    /* box-shadow: ; */
+    max-width: 70%;
+    max-height: 70%;
+}
+

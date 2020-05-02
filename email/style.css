@@ -34,12 +34,7 @@ nav{
     color: #ffffff;
    grid-area: nav; 
 }
-#linkmenu:hover #emaillist{
-    /* #emaillist {
-        position: relative;
-    } */
- position: relative;
-}
+
 nav #linkmenu{
     color: #1B98F8;
     align-self: flex-end;
@@ -49,13 +44,13 @@ nav #linkmenu{
   
     z-index: 150;
 } */
-#emaillist  {
+/* #emaillist  {
     position: absolute;
     left: 0;
     top: 30px;
     z-index: 20;
     background-color: #ffffff;
-}
+} */
 
 nav #compose{
     display: inline-block;
@@ -132,7 +127,7 @@ a{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 400px;
+    height: 600px;
     overflow: scroll;
 
 }
@@ -199,9 +194,6 @@ header{
 article{
     background: #ffffff;
 }
-@media(#linkmenu:hover){
-
-}
 @media(min-width: 639px){
     
     main{
@@ -223,10 +215,8 @@ article{
     }
     #linkmenu{
         display: none;
-    }
-    #emaillist {
-        position: relative;
-    }
+     }
+    
 }
 
 @media(min-width: 950px){
@@ -243,7 +233,8 @@ article{
         
     }
     #emaillist{
-        height: 100% ;
+        height: auto ;
         border-right: 1px solid #555;
+        overflow: unset;
     }
 }
