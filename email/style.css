@@ -54,19 +54,11 @@ nav{
    transition: 0.5s transform ease-in-out;
 }
 
-/* nav #linkmenu{
-    color: #1B98F8;
-    align-self: flex-end;
-    padding-right: 8px;
-} */
-/* #linkmenu:hover  {
-  
-    z-index: 150;
-} */
 #emaillist  {
     position: relative;
     left: 0;
-    top: 30px;
+    top: 0;
+    margin-top: 10px;
     z-index: 20;
     background-color: #ffffff;
 }
@@ -225,18 +217,31 @@ article{
     "nav emaillist"
     "nav content";
     }
+    #menu{
+        position: relative;
+    }
 
     nav{
         display: flex;
         flex-direction: column;
         width: 100%;
         color: #ffffff;
-       grid-area: nav; 
+        grid-area: nav; 
+        position: relative ;
+        transform: none;
+        transition: none;
     }
-    #linkmenu{
+    /* #linkmenu{
         display: none;
-     }
-    
+     } */
+    .buttonmenu{
+        display: none;
+    }
+    #emaillist{
+        position: relative;
+        margin-top: 0;
+    }
+
 }
 
 @media(min-width: 950px){
